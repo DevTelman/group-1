@@ -7,7 +7,7 @@ namespace Player
     {
         [SerializeField] private Animator animator;
         [SerializeField] private Rigidbody rb;
-        [SerializeField] private float rotationSpeed = 100f;
+        [SerializeField] private float rotationSpeed = 300f;
 
         private void FixedUpdate()
         {
@@ -29,6 +29,9 @@ namespace Player
                 rb.MoveRotation(
                     rb.rotation * Quaternion.Euler(0f, horizontal * rotationSpeed * Time.fixedDeltaTime, 0f));
             }
+
         }
+
+        
     }
 }
