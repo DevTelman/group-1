@@ -5,6 +5,8 @@ namespace Player
 {
     public class PlayerMovement : MonoBehaviour
     {
+        
+        
         [SerializeField] private Animator animator;
         [SerializeField] private Rigidbody rb;
         [SerializeField] private float rotationSpeed = 300f;
